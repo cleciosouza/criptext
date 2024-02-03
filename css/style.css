@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --bg-blue:#F3F5FC;
+    --dark-blue: #0A3871;
+    --gray: #D8DFE8;
+    --dark-gray:#343A40;
+
+    
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+    /* border: 1px solid rgba(255, 0, 0, 0.436); */
+}
+body {
+    background-color: var(--bg-blue);
+}
+body, html {
+    font-family: 'Inter', sans-serif;
+}
+
+.alert::before {
+    content: url(../img/bi_exclamation-circle-fill.svg);
+    vertical-align: sub;
+    margin: 1rem 0.2rem 1rem 0;
+}
+
+.content {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.container {
+    width: 100%;
+    padding-right:0.5rem ;
+    padding-left: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* background: rgba(175, 167, 167, 0.318); */
+}
+
+.form {
+    width: 70%;
+    margin: 4rem 2rem;
+}
+
+.form textarea {
+    width: 100%;
+    font-size: 1.7rem;
+    background: transparent;
+    border: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+textarea:focus-visible {
+    outline: transparent;
+}
+::placeholder {
+    color: var(--dark-blue);
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--dark-blue);
+  }
+.outputText {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    background: #fff;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.outputText img {
+    width: 100%;
+}
+.outputText h2, .outputText p {
+    text-align: center;
+}
+.outputText .notfound {
+    padding: 1rem;
+}
+.alert {
+    color: #878B92;
+    font-size: .7rem;
+}
+
+p.inText {
+    text-align: left;
+    font-size: 1.5rem;
+    top: 0;
+    margin: 2rem;
+}
+.btn-group {
+    width: 100%;
+}
+.btn {
+    
+    padding: 1.4rem 1.2rem;
+    margin: .7rem;
+    border-radius: 1.3rem;
+    border: 1px solid var(--dark-blue);
+    font-size: 1rem ;
+}
+.btn-group .btn {
+    width: 47%;
+}
+.btn-encrypt {
+    background: var(--dark-blue);
+    color: #fff;
+}
+.btn-copy {
+    background: transparent;
+    text-align: center;
+    width: 90%;
+    color: var(--dark-blue);
+    
+}
+.bnt-decrypt {
+    background: transparent;
+    color: var(--dark-blue);
+}
+
+.container {
+    max-width: 95%; 
+}
+.close {
+    display: none;
+}
+
