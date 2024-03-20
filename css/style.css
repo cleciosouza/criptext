@@ -76,7 +76,7 @@ textarea.text-area {
     margin: 2rem 0;    
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    background-image: url(/imagens/animated/plus-01.gif);    
+    background-image: url("/imagens/animated/plus-01.gif");    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10rem;
@@ -87,7 +87,7 @@ textarea.text-area {
 
 textarea.mensagem {
     background-color: gray;
-    background-image: url(/imagens/boneco.png);
+    background-image: url("../imagens/boneco.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -271,7 +271,7 @@ background: radial-gradient(at left top, #229FD3, #1E198C);
     margin: 2rem 0;    
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;    
-    background-image: url(/imagens/animated/arrow-right-01.gif);
+    background-image: url("../imagens/animated/arrow-right-01.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10rem;
