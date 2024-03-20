@@ -1,38 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador ed texto</title>   
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <aside>
-                <img src="./img/Logo.svg" alt="Logo da Alura no formato da letra a na cor azul escura">
-            </aside>
-            <div class="form">
-                <form action="">
-                    <textarea name="text" id="textBox" cols="30" rows="20" placeholder="Digite seu texto"></textarea>
-                    <p class="alert">Apenas letras minúsculas e sem acento.</p>
-                    <div class="btn-group">
-                        <button type="submit" id="btnEncrypt" class="btn btn-encrypt">Criptografar</button>
-                        <button class="btn btn-decrypt" id="btnDecrypt">Descriptografar</button>
+    <div id="app">
+        <div class="content">        
+            <main>                
+                <section class="input">
+                    <header>
+                        <img src="imagens/alura.svg" alt="Logo da Alura" class="logo-alura">
+
+                        <a href="#" class="links">
+                            <i class="ph ph-github-logo"></i>
+                            Github
+                        </a>
+                    </header>
+                    <h2> Decodificador de texto </h2>                    
+                    <textarea class="text-area" cols="41" rows="4" placeholder="Insira o texto para ser criptografado"></textarea>
+                    <div class="informacao">
+                        <h6>
+                            <i class="ph ph-warning"></i>
+                            Apenas letras minúsculas e sem acento.
+                        </h6>
                     </div>
-                </form>
-            </div>
-            <div class="outputText">
-                <p class="inText"></p>
-                <div class="notfound">
-                    <img src="./img/bg-text-not-found.svg" alt="">
-                    <h2>Nenhuma mensagem encontrada</h2>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-                </div>
-                <button class="btn btn-copy close" id="btnCopy">Copiar</button>
-            </div>
+                    <div class="botoes">
+                        <button class="btns btn-encriptar" data-status="inativo" onclick="encrypted()">
+                            <i class="ph ph-lock-key-open"></i> 
+                            Criptogtafar
+                        </button>
+                        <button class="btns btn-desencriptar"  onclick="decrypted()">
+                            <i class="ph ph-lock-key"></i>
+                            Descriptogtafar
+                        </button>
+                    </div>
+                </section>
+                <section class="output">
+                    
+                    <textarea class="mensagem" cols="20" rows="10" disabled>                        
+                    </textarea>
+                    <div class="container-button snone" data-button-copy="false" data-status="Nada para ser copiado">
+
+                        <button class="btns btn-copiar">
+                            Copiar
+                            <i class="ph ph-copy"></i>                            
+                        </button>
+                        
+                    </div>                    
+                </section>
+                
+            </main>            
         </div>
-    </div>    
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
