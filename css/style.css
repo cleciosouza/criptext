@@ -76,7 +76,7 @@ textarea.text-area {
     margin: 2rem 0;    
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    background-image: url("/imagens/animated/plus-01.gif");    
+    background-image: url("../imagens/animated/plus-01.gif");    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10rem;
