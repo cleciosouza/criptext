@@ -1,7 +1,7 @@
 # CripText
 
 <p aligh="left">
-  <img  src="img/criptext.png" /></br>
+  <img  src="img/criptext.jpeg" /></br>
   <p>Hey there, welcome!</br>
   I'm Clécio Souza, Front End developer & Ui Designer from <b>Barueri - São Paulo, Brasil</b>.</p>
 
